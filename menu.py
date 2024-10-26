@@ -153,7 +153,7 @@ print("\nThank you for your order! Here is a summary of your items we are prepar
 print("Item name                 | Price  | Quantity")
 print("--------------------------|--------|----------")
 for item in order_list:
-    print(f"{item['Item name']:<26} | ${item['Price']:<6} | {item['Quantity']}")
+    print(f"{item['Item name']:<25} | ${item['Price']:<5} | {item['Quantity']}")
 
 # Calculate total cost
 total_cost = sum(item['Price'] * item['Quantity'] for item in order_list)
